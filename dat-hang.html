@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechCore PC - Form đặt hàng tĩnh minh họa HTML thuần.">
+    <title>TechCore PC | ĐẶT HÀNG</title>
+</head>
+
+<body bgcolor="#fcf8ae" text="#000000" link="#0759B8" vlink="#614DB6" alink="#F07421">
+
+    <a href="#noi-dung">Bỏ qua menu, đến nội dung chính</a>
+
+    <!-- HEADER: BLACK & CYAN -->
+    <header>
+        <table bgcolor="#111111" border="1" cellpadding="20" cellspacing="0" width="100%">
+            <tr>
+                <td align="center">
+                    <font color="#00FFFF" face="Courier New" size="7"><big>TechCore PC</big></font><br />
+                    <font color="#FCEE0A" face="Arial" size="4"><b>YOUR DREAM ⚡️ OUR CORE</b></font><br />
+                    <font color="#AAAAAA" face="Courier New" size="2">Cửa hàng linh kiện PC | TRẠNG THÁI: DEMO</font>
+                </td>
+            </tr>
+        </table>
+
+        <!-- NAV: CYAN & BLACK -->
+        <table bgcolor="#baffff" border="0" bordercolor="#111111" cellpadding="12" cellspacing="0" width="100%">
+            <tr>
+                <td align="center">
+                    <nav aria-label="Điều hướng chính">
+                        <b>
+                            <a href="index.html">
+                                <font color="#111111" face="Courier New">⌂ TRANG CHỦ</font>
+                            </a> &nbsp; | &nbsp;
+                            <a href="index.html#san-pham">
+                                <font color="#111111" face="Courier New">◈ SẢN PHẨM</font>
+                            </a> &nbsp; | &nbsp;
+                            <a href="chi-tiet.html">
+                                <font color="#111111" face="Courier New">▤ CHI TIẾT</font>
+                            </a> &nbsp; | &nbsp;
+                            <a href="bang-gia.html">
+                                <font color="#111111" face="Courier New">▦ BẢNG GIÁ</font>
+                            </a> &nbsp; | &nbsp;
+                            <a href="dat-hang.html">
+                                <font color="#111111" face="Courier New">✉ ĐẶT HÀNG</font>
+                            </a>
+                        </b>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <main id="noi-dung">
+        <br />
+        <p align="center">
+            <font size="6" face="Courier New"><big> KHỞI TẠO ĐƠN HÀNG (DEMO)</big></font>
+        </p>
+        <p align="center">
+            <font face="Courier New"><i>Vui lòng điền thông tin bên dưới để gửi yêu cầu đặt linh kiện.</i></font>
+        </p>
+        <br />
+
+        <!-- FORM ĐẶT HÀNG -->
+        <table align="center" bgcolor="#FFFFFF" border="2" bordercolor="#111111" cellpadding="25" cellspacing="0"
+            width="70%">
+            <tr>
+                <td>
+                    <form action="xac-nhan.html" method="get">
+                        <font face="Courier New" size="3">
+
+                            <!-- FIELDSET 1: THÔNG TIN KHÁCH HÀNG -->
+                            <fieldset>
+                                <legend><b> THÔNG TIN NGƯỜI ĐẶT </b></legend>
+                                <p>
+                                    <label for="ten">Họ tên *</label><br>
+                                    <input autocomplete="name" id="ten" maxlength="60" minlength="2" name="hoTen"
+                                        placeholder="Nguyễn Văn A" required type="text" size="40" />
+                                </p>
+                                <p>
+                                    <label for="email">Email *</label><br>
+                                    <input autocomplete="email" id="email" name="email" placeholder="demo@example.com"
+                                        required type="email" size="40" />
+                                </p>
+                                <p>
+                                    <label for="phone">Điện thoại (chỉ nhập số giả lập)</label><br />
+                                    <input id="phone" name="phone" placeholder="0900000000" type="tel" size="40" />
+                                </p>
+                            </fieldset>
+
+                            <br />
+
+                            <!-- FIELDSET 2: CHI TIẾT SẢN PHẨM -->
+                            <fieldset>
+                                <legend><b> CHI TIẾT SẢN PHẨM PC GEAR </b></legend>
+                                <p>
+                                    <label for="product">Lựa chọn linh kiện *</label><br />
+                                    <select id="product" name="maSanPham" required>
+                                        <option value="">-- Chọn sản phẩm --</option>
+                                        <option value="CPU01">CPU01 - Intel Core i5-12400F (3.990.000 đ)</option>
+                                        <option value="CPU02">CPU02 - Intel Core i9-14900K (14.500.000 đ)</option>
+                                        <option value="CPU03">CPU03 - AMD Ryzen 5 7600X (5.800.000 đ)</option>
+                                        <option value="MB01">MB01 - ASUS Prime B660M-K (2.450.000 đ)</option>
+                                        <option value="MB02">MB02 - MSI MAG Z790 TOMAHAWK (7.990.000 đ)</option>
+                                        <option value="RAM01">RAM01 - Kingston Fury Beast 16GB (950.000 đ)</option>
+                                        <option value="RAM02">RAM02 - Corsair Vengeance RGB 32GB (3.400.000 đ)</option>
+                                        <option value="SSD01">SSD01 - Samsung 980 PRO 500GB (1.850.000 đ)</option>
+                                        <option value="SSD02">SSD02 - WD Blue SN580 1TB (1.450.000 đ)</option>
+                                        <option value="VGA01">VGA01 - Gigabyte RTX 3060 12GB (7.690.000 đ)</option>
+                                        <option value="VGA02">VGA02 - MSI GeForce RTX 4070 12GB (22.990.000 đ)</option>
+                                        <option value="VGA03">VGA03 - ASUS ROG RTX 5090 32GB (299.990.000 đ)</option>
+                                        <option value="PSU01">PSU01 - Corsair CV650 650W (1.250.000 đ)</option>
+                                        <option value="PSU02">PSU02 - Seasonic Focus GX-850 850W (3.450.000 đ)</option>
+                                        <option value="COOL01">COOL01 - NZXT Kraken X53 (3.100.000 đ)</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="quantity">Số lượng (1-5) *</label><br />
+                                    <input id="quantity" max="5" min="1" name="soLuong" required step="1" type="number"
+                                        value="1" />
+                                </p>
+                            </fieldset>
+
+                            <br />
+
+                            <!-- FIELDSET 3: GIAO HÀNG & GHI CHÚ -->
+                            <fieldset>
+                                <legend><b> HÌNH THỨC NHẬN HÀNG </b></legend>
+                                <p>
+                                    <label><input name="giaoHang" required type="radio" value="tai-cua-hang" /> Nhận tại
+                                        cửa hàng TechCore</label><br />
+                                    <label><input name="giaoHang" type="radio" value="giao-tan-noi" /> Giao hàng hỏa tốc
+                                        (TP.HCM)</label>
+                                </p>
+                                <p>
+                                    <label for="note">Ghi chú thêm (Không bắt buộc)</label><br />
+                                    <textarea cols="50" id="note" maxlength="300" name="ghiChu"
+                                        placeholder="Ví dụ: Cần ráp sẵn mainboard và CPU..." rows="4"></textarea>
+                                </p>
+                            </fieldset>
+
+                            <br />
+
+                            <!-- XÁC NHẬN & SUBMIT -->
+                            <p>
+                                <label>
+                                    <input name="dongY" required type="checkbox" value="yes" />
+                                    Tôi hiểu đây chỉ là form thực hành Lab02, không tạo đơn hàng thật *
+                                </label>
+                            </p>
+                            <p align="center">
+                                <button type="submit"><b><font face="Courier New" size="4">GỬI YÊU CẦU DEMO</font></b></button>
+                                &nbsp;
+                                <button type="reset"><font face="Courier New" size="4">NHẬP LẠI</font></button>
+                            </p>
+                        </font>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <table bgcolor="#111111" border="0" cellpadding="16" cellspacing="0" width="100%">
+            <tr>
+                <td align="center">
+                    <font color="#00FFFF" face="Courier New"> TechCore PC &nbsp;·&nbsp; 15 linh kiện demo &nbsp;·&nbsp;
+                        © 2026</font><br />
+                    <font color="#AAAAAA"><i>Dữ liệu, giá bán và thông tin chỉ mang tính minh họa phục vụ học tập bài
+                            Lab02. Không hỗ trợ giao dịch thật.</i></font><br /><br />
+                    <a href="dat-hang.html">
+                        <font color="#FCEE0A">↥ REBOOT_TO_TOP</font>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+
+</html>
